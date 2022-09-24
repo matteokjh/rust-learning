@@ -112,4 +112,7 @@ fn main() {
 
     let a = b'A';
     println!("b'A' is {}", a);
+
+    let tup: (i32, bool, char) = (8, false, 't');
+    println!("tup.2 is {}", tup.2);
 }
