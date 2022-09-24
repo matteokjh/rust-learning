@@ -28,6 +28,6 @@ fn main() {
     println!("a: {}", a);
 
     // constants
-    const TEST: u32 = 60;
+    const TEST: u32 = 60 * 60;
     println!("{}", TEST);
 }
