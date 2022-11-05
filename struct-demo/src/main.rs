@@ -1,3 +1,5 @@
+mod method_syntax;
+
 struct User {
     active: bool,
     username: String,
@@ -24,6 +26,8 @@ fn main() {
 
     main2();
     main3();
+
+    method_syntax::get_area_demo();
 }
 
 struct Color(i32, i32, i32);
@@ -44,15 +48,15 @@ fn main2() {
 
 struct User1 {
     active: bool,
-    username: &str,
-    email: &str,
+    username: String,
+    email: String,
     sign_in_count: u64,
 }
 
 fn main3() {
     let user1 = User1 {
-        email: "someone@example.com",
-        username: "someusername123",
+        email: String::from("someone@example.com"),
+        username: String::from("someusername123"),
         active: true,
         sign_in_count: 1,
     };
